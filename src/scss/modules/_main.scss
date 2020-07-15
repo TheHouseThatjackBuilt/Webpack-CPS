@@ -1,0 +1,176 @@
+
+// main style file ----------//
+
+/* main style block start ---------- */
+
+.main {
+
+  @media (min-width: $screenResolution) {
+    max-width: 1466px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__content {
+
+    @media (min-width: $screenResolution) {
+      display: flex;
+      flex-direction: column;
+      margin-left: 321px;
+    }
+  }
+
+  &__header {}
+
+  &__navigate {
+    margin-top: 30px;
+  }
+
+  &__navigate-menu {
+    display: flex;
+    overflow: scroll;
+
+    @media (min-width: $screenResolution) {
+      display: flex;
+      flex-wrap: wrap;
+      overflow: auto;
+    }
+  }
+
+  &__navigate-item {
+    white-space: nowrap;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding: 0 12px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    color: $aboutUsItemColor;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    transition: 0.4s ease-in-out;
+
+    &:hover, &:focus {
+      background: $backgroundColorModule;
+      border: 2px solid $aboutUsItemColorTwo;
+      border-radius: 5px;
+    }
+  }
+
+  &__navigate-link {
+    color: $aboutUsItemColor;
+    font-size: 1.6rem;
+  }
+
+  &__about-us {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0 10px;
+
+    @media (min-width: 768px) {
+      flex-direction: row;
+      justify-content: space-between;
+      margin: 0 20px;
+    }
+  }
+
+  &__description {
+    font-size: 1.4rem;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+    height: 371px;
+    overflow: hidden;
+    transition: 0.2s linear;
+
+    & > p {
+      margin: 15px 20px 15px 0;
+    }
+
+    @media (min-width: 360px) {
+      height: 300px;
+    }
+
+    @media (min-width: 650px) {
+      height: 180px;
+    }
+
+    @media (min-width: 768px) {
+
+      height: 310px;
+    }
+  }
+
+  &__drop-button {
+
+    @extend %dropButton;
+
+    &::before {
+      display: inline-block;
+      content: '';
+      transform: translate(0, 6px);
+      width: 24px;
+      height: 24px;
+      background: url("../../img/expand.svg") no-repeat center;
+    }
+  }
+
+  &__description-button {
+
+    transform: translate(-4px, -16px);
+
+    @media (min-width: 335px) {
+      margin-top: 15px;
+    }
+
+    @media (min-width: 768px) {
+      position: absolute;
+      }
+    }
+
+  &_hidden {
+    height: 123px;
+    transition: 0.2s linear;
+  }
+
+  &__photo {
+
+    @media (min-width: 360px) {
+      width: 360px;
+      margin: 15px auto;
+    }
+
+    @media (min-width: 768px) {
+
+      & > img {
+        max-width: 360px;
+      }
+    }
+
+    @media (min-width: 1090px) {
+
+      margin-right: 80px;
+      & > img {
+        max-width: 450px;
+      }
+    }
+
+    @media (min-width: $screenResolution) {
+
+      margin-right: 200px;
+
+      & > img {
+        max-width: 531px;;
+      }
+    }
+
+    & > img {
+      border-radius: 10px;
+    }
+  }
+
+  &__description_container {
+    position: relative;
+  }
+}

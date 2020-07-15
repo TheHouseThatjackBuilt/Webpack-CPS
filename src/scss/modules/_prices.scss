@@ -1,0 +1,105 @@
+
+
+// * price style file ---------- * //
+
+/* price block start ---------- */
+
+.prices {
+
+  @media (min-width: 768px) {
+    margin-top: 20px;
+  }
+
+  &__container {
+
+    margin: 20px 0 0 20px;
+
+    @media (min-width: 768px) {
+      display: none;
+    }
+  }
+
+  &__wrapper {}
+
+  &__slide {}
+
+  &__item {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 260px;
+    height: 200px;
+    background: $repairedBrandsItems;
+    border: $repairedBrandsItemsBorder;
+    border-radius: 6px;
+    padding: 16px 16px;
+  }
+
+  &__title {
+
+    font-size: 1.4rem;
+    line-height: 16px;
+    color: $pricesTitleColor;
+    mix-blend-mode: normal;
+    opacity: 0.72;
+  }
+
+  &__subtitle {
+
+    font-size: 1.4rem;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+    font-weight: 500;
+    color: $pricesSubtitleColor;
+  }
+
+  &__time-and-order {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transform: translate(0px, 0px);
+  }
+
+  &__button {
+    position: absolute;
+    transform: translate(98px, 130px);
+    background-position: 97px;
+    height: 32px;
+  }
+
+  &__annotation-and-offer {
+    padding: 0 35px;
+    max-width: 550px;
+  }
+
+  &__annotation {
+
+    font-size: 1.4rem;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    color: $pricesAnnotationColor;
+  }
+  &__offer {
+
+    margin-top: 20px;
+    margin-bottom: 47px;
+  }
+
+  &__offer-link {
+
+    font-size: 1.6rem;
+    display: inline-block;
+    line-height: 24px;
+    font-weight: 600;
+    letter-spacing: -0.2px;
+    color: $pricesAnnotationColor;
+
+    &::after {
+      content: url("../../img/Line.svg");
+      display: inline-block;
+      transform: translate(11px, 1px);
+    }
+  }
+}

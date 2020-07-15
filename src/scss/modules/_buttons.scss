@@ -1,0 +1,71 @@
+
+// * buttons style file ---------- * //
+
+/* buttons block start ---------- */
+
+.button {
+
+  width: 40px;
+  height: 40px;
+  background-color: $buttonsColor;
+  border-radius: 50%;
+  border: none;
+  transition:.3s;
+
+  &:hover {
+    text-align:center;
+    transition:.3s;
+    animation:waves linear 1s infinite;
+    box-shadow:0 8px 10px rgba(249,92,24,0.3);
+  }
+
+
+
+  &__close {
+
+    @extend %buttonsParameters;
+    background-image: url("../../img/close.svg");
+  }
+
+  &__search {
+
+    @extend %buttonsParameters;
+    background-image: url("../../img/search.svg");
+  }
+
+  &__call {
+
+    @extend %buttonsParameters;
+    background-image: url("../../img/call.svg");
+  }
+
+  &__chat {
+
+    @extend %buttonsParameters;
+    background-image: url("../../img/chat.svg");
+  }
+
+  &__profile {
+
+    @extend %buttonsParameters;
+    background-image: url("../../img/profile.svg");
+  }
+
+  &__menu {
+
+    @extend %buttonsParameters;
+    background-image: url("../../img/menu.svg");
+  }
+
+  &__repair {
+
+    @extend %buttonsParameters;
+    background-image: url("../../img/repair.svg");
+  }
+
+  &__status {
+
+    @extend %buttonsParameters;
+    background-image: url("../../img/checkstatus.svg");
+  }
+}
