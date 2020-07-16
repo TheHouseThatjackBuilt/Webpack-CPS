@@ -47,10 +47,6 @@
   background-repeat: no-repeat;
   background-position: center; }
 
-.callback__form {
-  margin-top: 20px;
-  padding: 8px 16px; }
-
 .callback__title::before, .feedback__title::before, .header__title::before {
   content: '';
   display: inline-block;
@@ -733,8 +729,10 @@ button.swiper-pagination-bullet {
     .callback_open .callback__body {
       transform: translate(0, 0);
       opacity: 1; }
-  .callback__form .form .form__label {
-    margin: 0; }
+  .callback__form {
+    margin-top: 30px; }
+    .callback__form .form .form__label {
+      margin: 0; }
 
 /* feedback block start ---------- */
 .feedback {
@@ -961,7 +959,7 @@ button.swiper-pagination-bullet {
 /* main style block start ---------- */
 @media (min-width: 1330px) {
   .main {
-    max-width: 1600px;
+    max-width: 1466px;
     margin: 0 auto;
     display: flex;
     flex-direction: column; } }
