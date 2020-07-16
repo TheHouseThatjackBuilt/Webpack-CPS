@@ -1,10 +1,15 @@
 
-
+// шрифт
 @import "../fonts/stylesheet.css";
-
+// экстенды и переменные
 @import "./utilities/index.scss";
+// ресет, базовые стили
 @import "./base/index.scss";
+// css swiper.min.css
+@import '/base/swiper.min.css';
+// анимация
 @import "./states/index.scss";
+// Основные модули
 @import './modules/index.scss';
 
 
