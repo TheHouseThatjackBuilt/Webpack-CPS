@@ -8,8 +8,4 @@ export function activeItem () {
 
     navItems.forEach(item => item.classList.remove('navigation__item_active'));
     this.closest('.navigation__item').classList.add('navigation__item_active');
-    this.preventDefault();
 }
-
-
-
