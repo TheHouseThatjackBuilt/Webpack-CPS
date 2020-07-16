@@ -1,0 +1,97 @@
+
+// * repair-equipment style file ---------- * //
+
+/* repair-equipment block start ---------- */
+
+.repair-equipment {
+
+  @media (min-width: 768px) {
+    margin-top: 20px;
+  }
+
+  &__container {
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+
+  &__wrapper {
+
+    @media (min-width: 768px) {
+      height: 1056px;
+      overflow: hidden;
+      flex-wrap: wrap;
+      justify-content: center;
+      transition: height .2s linear;
+    }
+
+    @media (min-width: 812px) {
+      height: 705px;
+      transition: height .2s linear;
+    }
+
+    @media (min-width: 1076px) {
+      height: 530px;
+      transition: height .2s linear;
+    }
+
+    @media (min-width: 1330px) {
+      height: 705px;
+      transition: height .2s linear;
+    }
+
+    @media (min-width: 1397px) {
+      height: 530px;
+      transition: height .2s linear;
+    }
+
+  }
+
+  &__item {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 240px;
+    height: 160px;
+    background: $repairedBrandsItems;
+    border: $repairedBrandsItemsBorder;
+    border-radius: 6px;
+    padding: 15px 15px;
+
+    @media (min-width: 768px) {
+      width: 224px;
+    }
+
+    @media (min-width: 768px) {
+      width: 240px;
+    }
+  }
+
+  &__slide {
+
+    @media (min-width: 768px) {
+
+      margin: 8px 12px;
+    }
+  }
+
+  &__name {
+    font-size: 1.6rem;
+    line-height: 24px;
+    font-weight: 500;
+    letter-spacing: -0.2px;
+    align-self: flex-start;
+  }
+
+  &__drop-button {
+
+    display: none;
+
+    @media (min-width: 768px) {
+      display: inline-block;
+      margin-top: 10px;
+      margin-left: 40px;
+    }
+  }
+}

@@ -1,0 +1,58 @@
+
+// * navigation style file ---------- * //
+
+/* navigation block start ---------- */
+
+.navigation {
+
+  flex-grow: 1;
+
+  &__item {
+
+    display: flex;
+    align-items: center;
+    width: 320px;
+    height: 43px;
+    margin-left: 24px;
+    position: relative;
+    transition: 0.4s ease-in-out;
+
+    &:hover::before {
+      content: "";
+      position: fixed;
+      transform: translate(-24px, -13px);
+      width: 4px;
+      height: 30px;
+      background: $decorationColorTitle;
+      border-radius: 20px;
+    }
+
+    &_active {
+
+      &:focus::before {
+        content: "";
+        position: fixed;
+        transform: translate(-24px, -13px);
+        width: 4px;
+        height: 30px;
+        background: $decorationColorTitle;
+        border-radius: 20px;
+      }
+    }
+  }
+
+  &__link {
+
+    width: 300px;
+    height: 43px;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: $sidebarColor;
+    transition: 0.3s ease-in-out;
+    display: inline-block;
+
+    &:focus {
+      color: $attentionColor;
+    }
+  }
+}

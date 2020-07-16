@@ -1,0 +1,53 @@
+
+// * service style file ---------- * //
+
+/* service block start ---------- */
+
+.service {
+
+  height: 80px;
+  background: $gradientServiceHeader;
+  display: flex;
+  align-items: center;
+  border-top: $serviceBorder;
+  border-bottom: $serviceBorder;
+
+  &__header {
+
+    line-height: 24px;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    padding: 16px 24px;
+    letter-spacing: -0.2px;
+  }
+
+  &__button {
+
+    width: 40px;
+    height: 40px;
+    background: $repairedBrandsItems url("../img/go.svg") no-repeat center;
+  }
+
+  &__round-button {
+
+    @extend %buttonsParameters;
+    background-image: url("../img/dropdown.svg");
+    width: 119px;
+    border-radius: 24px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    line-height: 24px;
+    letter-spacing: -0.15px;
+    text-transform: uppercase;
+    color: $backgroundColorModule;
+
+
+    & > span {
+      display: inline-block;
+      transform: translate(-10px, 0px);
+      transition: 0.4s ease-in-out;
+    }
+  }
+
+}
+

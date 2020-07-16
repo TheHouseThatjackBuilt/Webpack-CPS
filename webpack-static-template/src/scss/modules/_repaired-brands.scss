@@ -1,0 +1,106 @@
+
+// * repaired-brands style file ---------- * //
+
+/* repaired-brands block start ---------- */
+
+.repaired-brands {
+
+  margin-top: 40px;
+
+  &_hidden {
+
+    @media (min-width: 768px) {
+
+      height: 175px;
+      overflow: hidden;
+      transition: .2s linear;
+    }
+  }
+
+  &__title {
+
+    margin-top: 20px;
+    margin-bottom: 16px;
+  }
+
+  &__container {}
+
+  &__wrapper {
+
+    width: auto;
+    margin-bottom: 16px;
+    margin-left: 16px;
+
+    @media (min-width: 768px) {
+
+      height: 355px;
+      overflow: hidden;
+      flex-wrap: wrap;
+      justify-content: center;
+      transition: height .2s linear;
+    }
+
+    @media (min-width: 1008px) {
+
+      height: 264px;
+
+      transition: height .2s linear;
+    }
+
+    @media (min-width: $screenResolution) {
+      margin-left: 26px;
+    }
+  }
+
+  &__slide {
+
+    @media (min-width: 768px) {
+      margin: 8px 12px;
+    }
+  }
+
+  &__item {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 240px;
+    height: 72px;
+    background: $repairedBrandsItems;
+    border: $repairedBrandsItemsBorder;
+    border-radius: 6px;
+    padding: 0 15px;
+
+    @media (min-width: 768px) {
+      width: 224px;
+    }
+
+    @media (min-width: $screenResolution) {
+      width: 240px;
+    }
+  }
+
+  &__logo {}
+
+  &__link {
+
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    margin-right: 16px;
+  }
+
+  &__drop-button {
+    display: none;
+
+    @media (min-width: 768px) {
+      display: inline-block;
+      margin-top: 10px;
+      margin-left: 40px;
+    }
+
+    @media (min-width: $screenResolution) {
+
+    }
+  }
+}

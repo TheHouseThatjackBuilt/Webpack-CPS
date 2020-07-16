@@ -1,0 +1,76 @@
+
+// * extend file ---------- * //
+
+/* extends block ---------- */
+
+%moduleWindow {
+  width: 320px;
+  background-color: $backgroundColorModule;
+  transition: width 0.3s ease-in-out;
+
+  @media (min-width: 360px) {
+    width: 360px;
+  }
+
+  @media (min-width: 1366px) {
+    width: 440px;
+  }
+}
+
+%buttonsParameters {
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+%moduleMargins {
+  margin-top: 10px;
+  margin-left: 17px;
+}
+
+%moduleFormsMargins {
+  margin-top: 20px;
+  padding: 8px 16px;
+}
+
+%closeWindow {
+  margin-top: 24px;
+  margin-left: 16px;
+  transition: 0.4s linear;
+
+  @media (min-width: 1366px) {
+    transform: translate(-80px, 13px);
+  }
+}
+
+%decorationTitle {
+  content: '';
+  display: inline-block;
+  background: $decorationColorTitle;
+  border-radius: 10px;
+  width: 4px;
+  height: 40px;
+  transition: 0.3s ease-in-out;
+}
+
+%headerSides {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+%headerDecorating {
+  content: '';
+  width: 2px;
+  height: 32px;
+  background: $headerDecorateColor;
+  border-radius: 1px;
+}
+
+%dropButton {
+  display: inline-block;
+  font-size: 1.6rem;
+  line-height: 24px;
+  font-weight: 500;
+  letter-spacing: -0.2px;
+  background-color: transparent;
+}

@@ -1,0 +1,53 @@
+
+// reset file ----------//
+
+/* reset-style block start ---------- */
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+  outline: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+strong {
+  font-weight: normal;
+}
+
+/* reset-style block end ---------- */
